@@ -11,6 +11,7 @@ public class MappedStatement {
     //sql语句
     private String sql;
 
+    //执行类型，根据Mapper.xml的标签决定代理类将执行哪个方法
     private String executeType;
 
     public String getExecuteType() {

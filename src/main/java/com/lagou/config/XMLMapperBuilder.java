@@ -31,7 +31,6 @@ public class XMLMapperBuilder {
         Element rootElement = document.getRootElement();
 
         String namespace = rootElement.attributeValue("namespace");
-//        List<Element> list = new ArrayList<>();
         specifiedNodePathExpressionList.forEach(s -> {
             List<Element> list = rootElement.selectNodes(s);
             for (Element element : list) {

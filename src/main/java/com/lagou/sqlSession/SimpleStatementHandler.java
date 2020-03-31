@@ -84,10 +84,7 @@ public class SimpleStatementHandler implements StatementHandler {
 
     @Override
     public boolean update(PreparedStatement statement) throws Exception {
-//        String sql = this.boundSql.getSqlText();
         prepareParams(statement);
-        boolean flag = statement.execute();
-        System.out.println(flag);
-        return flag;
+        return statement.execute();
     }
 }

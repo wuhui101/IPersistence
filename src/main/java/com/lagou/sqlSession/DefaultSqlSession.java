@@ -85,8 +85,7 @@ public class DefaultSqlSession implements SqlSession {
                     case INSERT:
                         return insert(statementId, args);
                     case UPDATE:
-                        boolean flag = update(statementId, args);
-                        return flag;
+                        return update(statementId, args);
                     case SELECT:{
                         // 准备参数2：params:args
                         // 获取被调用方法的返回值类型
